@@ -16,13 +16,6 @@ pipeline {
 					script {
 							echo ${EXECUTE}
 						}
-
-					 when {
-                      expression { ${EXECUTE} == "True" }
-                    }
-                    steps {
-                        echo 'something'
-                    }
 				}
 			} 
 			stage('Third') {

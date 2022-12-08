@@ -12,7 +12,7 @@ pipeline {
 			}
 			stage('Second') {
 				 when {
-                equals( environment name: 'EXECUTE', value: "True")
+                         environment(name: "ENV", value: "testing")
             			}
 
 

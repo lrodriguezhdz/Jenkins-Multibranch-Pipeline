@@ -11,6 +11,11 @@ pipeline {
 				}
 			}
 			stage('Second') {
+				 when {
+                equals( environment name: 'EXECUTE', value: "True")
+            			}
+
+
 				steps {
 					sh 'echo "Updating Second Stage"'
 					script {

@@ -14,7 +14,7 @@ pipeline {
 				steps {
 					sh 'echo "Updating Second Stage"'
 					script {
-							echo ${EXECUTE}
+							sh'echo ${EXECUTE}'
 						}
 				}
 			} 
